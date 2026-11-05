@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    background-color: #3a7098;
+    font-family: sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #00203f;
+    padding: 10px 30px;
+    position: relative;
+    height: 50px;
+}
+
+.Reis {
+    margin-left: 30px;
+    color: #f5c518;
+}
+
+.Pealkiri {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+    margin-top: 160px;
+}
+
+.Broneeri {
+    margin-left: auto;
+    margin-right: 30px;
+    color: #f5c518;
+}
+
+.raamat-kast {
+    background-color: #00203F;
+    padding: 20px;
+    width: 250px;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.vorm-kast {
+    background-color: #00203F;
+    color: #F2BF24;
+    padding: 30px;
+    width: 250px;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    display: flex;
+}
+
+.koosta-nupp {
+    background-color: #00203F;
+    color: #F2BF24;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    border-radius: 50px;
+}
+
+.ohutase-kast {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 5px;
+    padding: 5px;
+    background-color: gray;
+
+    & > div {
+        height: 1.5rem;
+        background-color: white;
+    }
+}
+
