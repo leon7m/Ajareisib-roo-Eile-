@@ -2,14 +2,18 @@
   --primary-color: #59416f;
 }
 * 
-{
+* {
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
 }
 
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #adefd1;
+  background-color: #3A6F95;
   color: #302b35;
 }
 .hero {
@@ -145,10 +149,6 @@ footer p {
 
  --Teine veebileht
 
-** {
-    box-sizing: border-box;
-}
-
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -169,6 +169,29 @@ body {
     border-radius: 36px;
     overflow: hidden;
     min-height: 166px;
+}
+
+.card {
+    cursor: pointer;
+    color: inherit;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+.card-image {
+    overflow: hidden;
+}
+
+.card-image img {
+    transition: transform 0.4s ease;
+}
+
+.card:hover .card-image img {
+    transform: scale(1.12);
 }
 
 .card-text {
