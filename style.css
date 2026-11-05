@@ -4,136 +4,103 @@
 
 body {
   margin: 0;
+  padding: 20px;
+  background-color: #e5e5e5;
   font-family: Arial, sans-serif;
-  background-color: #adefd1;
-  color: #302b35;
-}
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-  padding: 80px 10%;
-  min-height: 550px;
 }
 
-.hero-text {
-  flex: 1;
-}
-
-.hero-text h1 {
-  font-size: 42px;
-  margin-bottom: 20px;
-}
-
-.hero-text p {
-  font-size: 18px;
-  line-height: 1.6;
-}
-
-.hero-image {
-  flex: 1;
-}
-
-.hero-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-.button {
-  display: inline-block;
-  background-color: #59416f;
-  color: white;
-  text-decoration: none;
-  padding: 14px 28px;
-  border-radius: 8px;
-  margin-top: 15px;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-
-.button:hover {
-  background-color: #3e2c50;
-}
 header {
-  background-color: #59416f;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  background-color: #00213b;
+
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+header a {
+  color: #ffc400;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 10px 40px 60px;
+  background-color: #3c7193;
+}
+
+h1 {
+  margin: 0 0 20px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.kokkuvote {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+  column-gap: 40px;
+  row-gap: 40px;
+
+  padding: 40px 55px;
+  border-radius: 25px;
+  background-color: #00213b;
   color: white;
-  padding: 20px 10%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.kokkuvote h2 {
+  margin: 0;
+  color: #ffc400;
+  font-size: 20px;
+  text-align: left;
+}
+
+.kokkuvote strong {
+  color: #ffc400;
+}
+
+.kokkuvote > * {
+  overflow-wrap: anywhere;
+}
+
+/* Väiksematel ekraanidel vähendame vahesid. */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  header {
+    padding: 20px;
+  }
+
+  main {
+    padding: 15px 15px 30px;
+  }
+
+  .kokkuvote {
+    padding: 25px 15px;
+    column-gap: 12px;
+    row-gap: 25px;
+    font-size: 14px;
+  }
+
+  .kokkuvote h2 {
+    font-size: 16px;
+  }
 }
 
 .logo {
-  font-size: 28px;
-  font-weight: bold;
-  letter-spacing: 2px;
+  width: 100px;
+  height: 100px;
 }
 
-nav {
-  display: flex;
-  gap: 30px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-footer {
-  background-color: #59416f;
-  color: white;
-  text-align: center;
-  padding: 40px 20px;
-  margin-top: 40px;
-}
-
-footer h2 {
-  font-size: 28px;
-  margin-bottom: 10px;
-}
-
-footer p {
-  font-size: 16px;
-}
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  nav {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-  }
-
-  .hero {
-    flex-direction: column;
-    padding: 40px 6%;
-    text-align: center;
-  }
-
-  .hero-text h1 {
-    font-size: 32px;
-  }
-
-  .hero-image {
-    width: 100%;
-  }
-}
-.hero {
-  border: 3px solid #302b35;
-  border-radius: 20px;
-  padding: 30px;
-  margin: 30px;
-  background-color: #00203f;
-}
-.hero-text h1,
-.hero-text p {
-  color: #f2bf24;
+.active {
+  margin-left: auto;
 }

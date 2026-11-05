@@ -1,5 +1,5 @@
 # Ajareisibüroo – Eile
-
+marten
 ## Projekti idee
 
 Ajareisibüroo Eile idee põhineb ulmesarjast **Star Trek** tuntud Holodeki ruumil. Tegemist on futuristliku ruumiga, kus inimene saab siseneda virtuaalselt loodud maailma ja kogeda erinevaid seiklusi.
