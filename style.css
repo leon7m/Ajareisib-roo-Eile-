@@ -5,30 +5,84 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #adefd1;
+  background-color: #325f89;
   color: #302b35;
+  width: 100%;
+  min-height: 100vh;
 }
+
+/* PÄIS */
+header {
+  background-color: #59416f;
+  color: #f2bf24;
+  width: 100%;
+  height: 60px;
+  padding: 8px 4%;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+  display: block;
+}
+
+/* MENÜÜ */
+header nav {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin-left: 30px;
+  gap: 30px;
+}
+
+header nav a {
+  color: #f2bf24;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+header nav a:nth-child(2) {
+  margin-left: auto;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* AVALEHE SISU */
 .hero {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 40px;
-  padding: 80px 10%;
-  min-height: 550px;
+  padding: 60px 6%;
+  width: 90%;
+  margin: 0 auto;
+  height: calc(100vh - 80px);
+  overflow: hidden;
+  border: 3px solid #302b35;
+  border-radius: 20px;
+  background-color: #00203f;
+  color: #f2bf24;
 }
 
 .hero-text {
   flex: 1;
+  text-align: center;
 }
 
 .hero-text h1 {
   font-size: 42px;
   margin-bottom: 20px;
+  color: #f2bf24;
 }
 
 .hero-text p {
   font-size: 18px;
   line-height: 1.6;
+  color: #f2bf24;
 }
 
 .hero-image {
@@ -40,100 +94,28 @@ body {
   height: auto;
   display: block;
 }
+
+/* NUPP */
 .button {
-  display: inline-block;
-  background-color: #59416f;
-  color: white;
-  text-decoration: none;
-  padding: 14px 28px;
-  border-radius: 8px;
-  margin-top: 15px;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-
-.button:hover {
-  background-color: #3e2c50;
-}
-header {
-  background-color: #59416f;
-  color: white;
-  padding: 20px 10%;
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  justify-content: space-between;
-}
-
-.logo {
-  font-size: 28px;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-
-nav {
-  display: flex;
-  gap: 30px;
-}
-
-nav a {
-  color: white;
+  justify-content: center;
+  width: 250px;
+  height: 55px;
+  background-color: #8bc6ff;
+  color: #302b35;
   text-decoration: none;
-  font-size: 16px;
+  border-radius: 111px;
+  margin-top: 0px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-nav a:hover {
-  text-decoration: underline;
-}
+/* JALUS */
 footer {
-  background-color: #59416f;
-  color: white;
-  text-align: center;
-  padding: 40px 20px;
-  margin-top: 40px;
-}
-
-footer h2 {
-  font-size: 28px;
-  margin-bottom: 10px;
-}
-
-footer p {
-  font-size: 16px;
-}
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  nav {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-  }
-
-  .hero {
-    flex-direction: column;
-    padding: 40px 6%;
-    text-align: center;
-  }
-
-  .hero-text h1 {
-    font-size: 32px;
-  }
-
-  .hero-image {
-    width: 100%;
-  }
-}
-.hero {
-  border: 3px solid #302b35;
-  border-radius: 20px;
-  padding: 30px;
-  margin: 30px;
-  background-color: #00203f;
-}
-.hero-text h1,
-.hero-text p {
+  background-color: #325f89;
   color: #f2bf24;
+  text-align: center;
+  padding: 20px 0;
 }
