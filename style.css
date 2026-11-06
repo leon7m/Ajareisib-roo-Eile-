@@ -1,11 +1,19 @@
+:root {
+  --primary-color: #59416f;
+}
+* 
 * {
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
 }
 
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #325f89;
+  background-color: #3A6F95;
   color: #302b35;
   width: 100%;
   min-height: 100vh;
@@ -143,4 +151,172 @@ footer h2.footer-promo {
       0 0 8px rgba(242, 191, 36, 0.8),
       0 0 15px rgba(242, 191, 36, 0.5);
   }
+}
+
+
+ --Teine veebileht
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #3d7192;
+    color: white;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 12%;
+    padding: 80px 7%;
+}
+
+.card {
+    display: flex;
+    background-color: #10283d;
+    border-radius: 36px;
+    overflow: hidden;
+    min-height: 166px;
+}
+
+.card {
+    cursor: pointer;
+    color: inherit;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+.card-image {
+    overflow: hidden;
+}
+
+.card-image img {
+    transition: transform 0.4s ease;
+}
+
+.card:hover .card-image img {
+    transform: scale(1.12);
+}
+
+.card-text {
+    width: 50%;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-text h2 {
+    color: #ffc107;
+    font-size: 25px;
+    text-align: center;
+    margin: 0 0 16px;
+}
+
+.card-text p {
+    color: #ffc107;
+    font-size: 15px;
+    line-height: 1.3;
+    margin: 0;
+    text-align: left;
+}
+
+.card-image {
+    width: 50%;
+    min-width: 0;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+@media (max-width: 900px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 40px 6%;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        min-height: 150px;
+        border-radius: 24px;
+    }
+
+    .card-text {
+        padding: 12px;
+    }
+
+    .card-text h2 {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .card-text p {
+        font-size: 10px;
+    }
+}
+
+/* Tähtis meist */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #3A6F95;
+  color: #302b35;
+}
+
+.meistSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 80px 10%;
+  min-height: 550px;
+}
+
+.MeistCard {
+    font-size: 16px;
+    text-align: left;
+    color: #f2bf24;
+    margin: 0;
+}
+
+.meistTop {
+    background-color: #00203f;
+    border: 3px solid #302b35;
+    border-radius: 25px;
+    font-weight: bold;
+
+    padding: 40px;
+    width: 100%;
+    max-width: 1600px;
+
+    margin: 0 auto;
+    color: #f2bf24;
+}
+
+.meistTop h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.meistTop h2 {
+    font-size: 40px;
+    text-align: start;
+}
+
+.meistTop p {
+    font-size: 25px;
+    line-height: 1.6;
+    text-align: start;
 }
