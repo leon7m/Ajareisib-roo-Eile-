@@ -109,8 +109,14 @@ header nav a:hover {
   margin-top: 0px;
   font-weight: bold;
   cursor: pointer;
-  transition: 0.3s;
+  transition:background-color 0.3s;
 }
+
+/* Muudab värvi ära kui hiirega selle peal */
+.button:hover{
+  background-color: rgb(114, 68, 183);
+}
+
 
 /* JALUS */
 footer {
@@ -119,3 +125,6 @@ footer {
   text-align: center;
   padding: 20px 0;
 }
+
+
+
