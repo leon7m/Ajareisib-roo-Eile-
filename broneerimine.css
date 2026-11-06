@@ -46,13 +46,27 @@ body {
 .vorm-kast {
     background-color: #00203F;
     color: #F2BF24;
-    padding: 30px;
-    width: 250px;
-    margin: 0 auto;
+    padding: 50px;
+    width: 350px;
+    margin: auto;
     margin-top: 20px;
 
     display: flex;
-}
+    gap: 30px;
+    }
+
+    .form-label {
+        margin-bottom: 10px;
+        gap: 10px;
+    }
+
+    .form-input {
+        padding: 5px;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+
 
 .koosta-nupp {
     background-color: #00203F;
@@ -65,6 +79,7 @@ body {
     transform: translateX(-50%);
     width: 200px;
     border-radius: 50px;
+    margin-top: 20px;
 }
 
 .ohutase-kast {
@@ -76,7 +91,25 @@ body {
 
     & > div {
         height: 1.5rem;
-        background-color: white;
     }
 }
 
+.ohutusekast1 {
+    background-color: #FF3B3B;
+}
+
+.ohutusekast2 {
+    background-color: #FF793B;
+}
+
+.ohutusekast3 {
+    background-color: #FFB43B;
+}
+
+.ohutusekast4 {
+    background-color: #FFFC3B;
+}
+
+.ohutusekast5 {
+    background-color: #3BFF3B;
+}
