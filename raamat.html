@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raamat</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+    <header class="raamat-header">
+        <h1>Fantaasia</h1>
+        <div class="timer">
+            <div class="time-box">
+                <h1 id="days">7</h1>
+                <p>Days</p>
+            </div>
+
+            <div class="time-box">
+                <h1 id="hours">00</h1>
+                <p>Hours</p>
+            </div>
+
+            <div class="time-box">
+                <h1 id="minutes">00</h1>
+                <p>Minutes</p>
+            </div>
+
+            <div class="time-box">
+                <h1 id="seconds">00</h1>
+                <p>Seconds</p>
+            </div>
+        </div>
+    </header>
+<script>
+    // Set countdown to 7 days
+    let timeLeft = 7 * 24 * 60 * 60;
+
+    function updateTimer() {
+        let days = Math.floor(timeLeft / 86400);
+        let hours = Math.floor((timeLeft % 86400) / 3600);
+        let minutes = Math.floor((timeLeft % 3600) / 60);
+        let seconds = timeLeft % 60;
+
+        document.getElementById("days").textContent = days;
+        document.getElementById("hours").textContent =
+            String(hours).padStart(2, "0");
+        document.getElementById("minutes").textContent =
+            String(minutes).padStart(2, "0");
+        document.getElementById("seconds").textContent =
+            String(seconds).padStart(2, "0");
+
+        if (timeLeft > 0) {
+            timeLeft--;
+        }
+    }
+
+    updateTimer();
+
+    setInterval(updateTimer, 1000);
+</script>
+    
+<main>
+
+
+        
+<div class="book-box">
+    <article class="book-card">
+    <img src="Poirot.jpg" alt="k22bik">
+    <div class="card-text">
+        <h2>"Kääbik"</h2>
+        <p>J. R. R. Tolkien. Kääbik Bilbo läheb koos päkapikkudega ohtlikule retkele, <br> tuua tagasi lohe Smaugi valvatud aare.</p>
+    </article>
+    </div>
+    </div>
+
+    <div class="book-box">
+        <article class="book-card">
+        <img src="Poirot.jpg" alt="Harry">
+            <div class="card-text">
+                <h2>"Harry Potter ja tarkade kivi"</h2> 
+                <p>J. K. Rowling. Harry saab teada, et ta on võlur, <br> asub Sigatüükas koos sõpradega uurima salapärase tarkade kivi saladust.</p>
+            </div>
+        </div>
+    </article>
+        </div>
+    <div class="book-box">
+        <article class="book-card">
+        <img src="Poirot.jpg" alt="Harry">
+    <div class="card-text">
+        <h2>"Lõvi, nõid ja riidekapp"</h2>
+        <p>C. S. Lewis. Neli last avastavad riidekapi kaudu Narnia võlumaa, <br> Valge Nõid on pannud kestma igavese talve.</p>
+        </div>
+    </article>
+    </div>
+
+    </body>
+        
+       
+    </div>
+    </main>
+    
+</html>
