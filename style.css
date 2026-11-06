@@ -4,13 +4,11 @@
 
 body {
   margin: 0;
-  padding: 20px;
   background-color: #e5e5e5;
   font-family: Arial, sans-serif;
 }
 
 header {
-  max-width: 1300px;
   margin: 0 auto;
   padding: 20px 40px;
   background-color: #00213b;
@@ -28,7 +26,6 @@ header a {
 }
 
 main {
-  max-width: 1300px;
   margin: 0 auto;
   padding: 10px 40px 60px;
   background-color: #3c7193;
