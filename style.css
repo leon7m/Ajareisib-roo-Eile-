@@ -9,8 +9,9 @@ body {
 }
 
 header {
+  height: 100px;
   margin: 0 auto;
-  padding: 20px 40px;
+  padding: 20px 1px;
   background-color: #00213b;
 
 
@@ -19,6 +20,11 @@ header {
     gap: 15px;
 }
 
+header a { color: #ffc400;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 28px;
+}
 header a {
   color: #ffc400;
   text-decoration: none;
@@ -26,10 +32,11 @@ header a {
 }
 
 main {
-  margin: 0 auto;
+  margin-top: 30px;
   padding: 10px 40px 60px;
   background-color: #3c7193;
 }
+
 
 h1 {
   margin: 0 0 20px;
@@ -100,4 +107,5 @@ h1 {
 
 .active {
   margin-left: auto;
+  margin-right: 40px;
 }
