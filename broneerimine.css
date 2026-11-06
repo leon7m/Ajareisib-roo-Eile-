@@ -1,115 +1,186 @@
+:root {
+    --u: min(calc(100vw / 1116), calc(100vh / 825));
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
 body {
     margin: 0;
-    background-color: #3a7098;
-    font-family: sans-serif;
+    height: 100%;
+    overflow: hidden;
+    background-color: #3A7094;
+    font-family: "Inter", sans-serif;
 }
 
 .header {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    background-color: #00203f;
-    padding: 10px 30px;
-    position: relative;
-    height: 50px;
+    height: calc(var(--u) * 65);
+    background-color: #00203F;
+    color: #F2BF24;
+    padding-right: calc(var(--u) * 63);
 }
 
-.Reis {
-    margin-left: 30px;
-    color: #f5c518;
+.logo-kast {
+    width: calc(var(--u) * 65);
+    height: calc(var(--u) * 65);
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
 }
 
-.Pealkiri {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 40px;
-    color: black;
-    font-weight: bold;
-    margin-top: 160px;
+.logo-pilt {
+    width: calc(var(--u) * 42);
+    height: calc(var(--u) * 42);
+    object-fit: contain;
+}
+
+.logo {
+    margin-left: calc(var(--u) * 20);
+    font-size: calc(var(--u) * 20);
+    font-weight: 600;
+    color: #F2BF24;
 }
 
 .Broneeri {
     margin-left: auto;
-    margin-right: 30px;
-    color: #f5c518;
+    font-size: calc(var(--u) * 20);
+    font-weight: 600;
+    color: #F2BF24;
+}
+
+.leht {
+    background-color: #3A7094;
+    min-height: calc(100vh - var(--u) * 65);
+}
+
+.Pealkiri {
+    margin: 0;
+    height: calc(var(--u) * 70);
+    line-height: calc(var(--u) * 70);
+    text-align: center;
+    font-size: calc(var(--u) * 52);
+    font-weight: 900;
+    letter-spacing: -0.04em;
+    color: #000000;
 }
 
 .raamat-kast {
+    width: calc(var(--u) * 490);
+    height: calc(var(--u) * 54);
+    margin: calc(var(--u) * 4) auto 0;
     background-color: #00203F;
-    padding: 20px;
-    width: 250px;
-    margin: 0 auto;
-    margin-top: 70px;
+    border: calc(var(--u) * 4) solid #000000;
+    color: #F2BF24;
+    font-size: calc(var(--u) * 32);
+    font-weight: 500;
+    line-height: calc(var(--u) * 46);
+    text-align: center;
 }
 
 .vorm-kast {
-    background-color: #00203F;
-    color: #F2BF24;
-    padding: 50px;
-    width: 350px;
-    margin: auto;
-    margin-top: 20px;
-
     display: flex;
-    gap: 30px;
-    }
-
-    .form-label {
-        margin-bottom: 10px;
-        gap: 10px;
-    }
-
-    .form-input {
-        padding: 5px;
-        margin-bottom: 15px;
-        width: 100%;
-    }
-
-
-
-.koosta-nupp {
+    align-items: flex-start;
+    width: calc(var(--u) * 822);
+    height: calc(var(--u) * 456);
+    margin: calc(var(--u) * 16) auto 0;
+    padding: calc(var(--u) * 35) 0 0 calc(var(--u) * 56);
     background-color: #00203F;
     color: #F2BF24;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 200px;
-    border-radius: 50px;
-    margin-top: 20px;
+    border-radius: calc(var(--u) * 50);
+    box-shadow: calc(var(--u) * 18) calc(var(--u) * 22) calc(var(--u) * 30) rgba(0, 0, 0, 0.35);
+}
+
+#broneeringu-vorm {
+    width: calc(var(--u) * 313);
+}
+
+.form-label {
+    display: block;
+    height: calc(var(--u) * 36);
+    margin-bottom: calc(var(--u) * 9);
+    line-height: calc(var(--u) * 36);
+    text-align: center;
+    font-size: calc(var(--u) * 30);
+    font-weight: 500;
+    color: #F2BF24;
+}
+
+.form-input {
+    display: block;
+    width: calc(var(--u) * 313);
+    height: calc(var(--u) * 64);
+    margin: 0 0 calc(var(--u) * 22);
+    padding: 0 calc(var(--u) * 12);
+    border: none;
+    border-radius: 0;
+    outline: none;
+    background-color: #8DC6FF;
+    color: #00203F;
+    font-family: inherit;
+    font-size: calc(var(--u) * 24);
+}
+
+.ohutase {
+    width: calc(var(--u) * 125);
+    margin-left: calc(var(--u) * 190);
+    margin-top: calc(var(--u) * 40);
+}
+
+.ohutase-silt {
+    margin: 0 0 calc(var(--u) * 9);
+    width: calc(var(--u) * 125);
+    height: calc(var(--u) * 36);
+    line-height: calc(var(--u) * 36);
+    text-align: center;
+    white-space: nowrap;
+    font-size: calc(var(--u) * 30);
+    font-weight: 500;
+    color: #F2BF24;
 }
 
 .ohutase-kast {
-    display: grid;
-    grid-template-rows: repeat(5, 1fr);
-    gap: 5px;
-    padding: 5px;
-    background-color: gray;
-
-    & > div {
-        height: 1.5rem;
-    }
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--u) * 10);
+    width: calc(var(--u) * 125);
+    height: calc(var(--u) * 277);
+    padding: calc(var(--u) * 9);
+    background-color: #0052A5;
+    border: calc(var(--u) * 4) solid #000000;
 }
 
-.ohutusekast1 {
-    background-color: #FF3B3B;
+.ohutase-kast > div {
+    flex: 1;
 }
 
-.ohutusekast2 {
-    background-color: #FF793B;
+.ohutusekast1 { background-color: #FF3B3B; }
+.ohutusekast2 { background-color: #FF793B; }
+.ohutusekast3 { background-color: #FFB43B; }
+.ohutusekast4 { background-color: #FFFC3B; }
+.ohutusekast5 { background-color: #8CFF3B; }
+
+.button-kast {
+    display: flex;
+    justify-content: center;
+    margin-top: calc(var(--u) * 31);
 }
 
-.ohutusekast3 {
-    background-color: #FFB43B;
-}
-
-.ohutusekast4 {
-    background-color: #FFFC3B;
-}
-
-.ohutusekast5 {
-    background-color: #3BFF3B;
+.koosta-nupp {
+    width: calc(var(--u) * 400);
+    height: calc(var(--u) * 60);
+    border: none;
+    border-radius: calc(var(--u) * 30);
+    background-color: #00203F;
+    color: #F2BF24;
+    font-family: inherit;
+    font-size: calc(var(--u) * 36);
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: calc(var(--u) * 14) calc(var(--u) * 18) calc(var(--u) * 24) rgba(0, 0, 0, 0.3);
 }

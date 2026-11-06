@@ -1,45 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="et">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-     <link rel="stylesheet" href="broneerimine.css">
+    <title>Reis raamatusse</title>
+    <link rel="stylesheet" href="broneerimine.css">
 </head>
 <body>
     <header class="header">
-        <SPAN class="Reis">reis raamatusse</SPAN>
-        <SPAN class="Broneeri">Broneeri kohe</SPAN>
-        <SPAN class="Pealkiri">Broneeri oma raamatureis</SPAN>
+        <div class="logo-kast">
+            <img class="logo-pilt" src="logo.png" alt="Reis raamatusse logo">
+        </div>
+        <span class="logo">Reis raamatusse</span>
+        <span class="Broneeri">Broneeri kohe</span>
     </header>
 
-    <div class="raamat-kast"></div>
+    <main class="leht">
+        <h1 class="Pealkiri">Broneeri oma raamatureis</h1>
 
-    <div class="vorm-kast">
-        <form action="">
-            <label class="form-label" for="kuupaev&kellaaeg">Kuupaev ja kellaaeg</label>
-            <input class="form-input" type="text" id="kuupaev&kellaaeg" name="kuupaev&kellaaeg" required>
-            <label class="form-label" for="Roll">Roll</label>
-            <input class="form-input" type="text" id="Roll" name="Roll" required>
-            <label class="form-label" for="osalejate-arv">Osalejate arv</label>
-            <input class="form-input" type="number" id="osalejate-arv" name="osalejate-arv" required>
-        </form>
-        
+        <div class="raamat-kast"></div>
 
-        <div>
-            <p>Ohutase</p>
-            <div class="ohutase-kast">
-                <div class="ohutusekast1"></div>
-                <div class="ohutusekast2"></div>
-                <div class="ohutusekast3"></div>
-                <div class="ohutusekast4"></div>
-                <div class="ohutusekast5"></div>
+        <div class="vorm-kast">
+            <form id="broneeringu-vorm" action="">
+               <label class="form-label" for="kuupaev-kellaaeg">
+                <label class="form-label" for="kuupaev-kellaaeg">Kuupäev ja kellaaeg</label>
+</label>
+
+<input
+    class="form-input"
+    type="datetime-local"
+    id="kuupaev-kellaaeg"
+    name="kuupaev-kellaaeg"
+    required
+>
+
+                <label class="form-label" for="roll">Roll</label>
+<select class="form-input" id="roll" name="roll" required>
+    <option value="">Vali roll</option>
+    <option value="Korraldaja">Korraldaja</option>
+    <option value="Osaleja">Osaleja</option>
+    <option value="Vaatleja">Vaatleja</option>
+</select>
+                <label class="form-label" for="osalejate-arv">Osalejate arv</label>
+                <input class="form-input" type="number" id="osalejate-arv" name="osalejate-arv" required>
+            </form>
+
+            <div class="ohutase">
+                <p class="ohutase-silt">Ohutase</p>
+                <div class="ohutase-kast">
+                    <div class="ohutusekast1"></div>
+                    <div class="ohutusekast2"></div>
+                    <div class="ohutusekast3"></div>
+                    <div class="ohutusekast4"></div>
+                    <div class="ohutusekast5"></div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="button-kast">
-        <button class="koosta-nupp" type="submit">Koosta pilet</button>
-    </div>
+        <div class="button-kast">
+            <button class="koosta-nupp"
+        type="submit"
+        form="broneeringu-vorm">
+    Koosta pilet
+</button>
+        </div>
+    </main>
 </body>
 </html>
