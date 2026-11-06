@@ -64,16 +64,18 @@ body {
   background-color: #3e2c50;
 }
 header {
-  background-color: #59416f;
-  color: white;
-  padding: 20px 10%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    background-color: #59416f;
+    color: white;
+    padding: 20px 10%;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
 }
 
 .logo {
   font-size: 28px;
+  text-align: start;
   font-weight: bold;
   letter-spacing: 2px;
 }
@@ -256,4 +258,34 @@ body {
     .card-text p {
         font-size: 10px;
     }
+}
+
+/* Tähtis meist */
+
+.MeistCard {
+    font-size: 20px;
+    text-align: left;
+    color: #f2bf24;
+    margin: 0;
+}
+
+.meistCenter {
+    text-align: center;
+    margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 80px 10%;
+  min-height: 550px;
+}
+
+.meistSection h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 10px 10%;
+    min-height: 10px;
+  flex: 1;
 }
