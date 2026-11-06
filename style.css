@@ -124,3 +124,23 @@ footer {
   text-align: center;
   padding: 20px 0;
 }
+footer h2.footer-promo {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  animation: goldenGlow 3s ease-in-out infinite;
+}
+
+@keyframes goldenGlow {
+  0%,
+  100% {
+    text-shadow: 0 0 3px rgba(242, 191, 36, 0.3);
+  }
+
+  50% {
+    text-shadow:
+      0 0 8px rgba(242, 191, 36, 0.8),
+      0 0 15px rgba(242, 191, 36, 0.5);
+  }
+}
